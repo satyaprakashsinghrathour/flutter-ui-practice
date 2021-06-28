@@ -1,0 +1,146 @@
+import 'package:flutter/material.dart';
+
+class Page1 extends StatelessWidget {
+  const Page1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            // margin:const EdgeInsets.all(30),
+
+            height: MediaQuery.of(context).size.height * 0.35,
+            width: double.infinity,
+            alignment: FractionalOffset.center,
+            // transform: Matrix4.rotationZ(0.1),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black, width: 4),
+              borderRadius: BorderRadius.circular(8),
+              color: Colors.black,
+              // boxShadow: [
+              //   new BoxShadow(
+              //     color: Colors.grey,
+              //     offset: new Offset(6.0, 6.0),
+              //   ),
+              // ],
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text('Hello!',
+                      style: TextStyle(fontSize: 30, color: Colors.white)),
+                  
+                  Text('SemiKolan LoginPage',
+                      style: TextStyle(fontSize: 25, color: Colors.white)),
+                ],
+              ),
+            ),
+          ),
+          ClipRRect(
+            borderRadius: BorderRadius.only(topLeft: Radius.circular(120)),
+            child: Container(
+                height: MediaQuery.of(context).size.height * 1,
+                // height: ,
+                width: double.infinity,
+                alignment: FractionalOffset.center,
+                // transform: Matrix4.rotationZ(0.1),
+                // decoration: BoxDecoration(
+                //   border: Border.all(color: Colors.black, width: 4),
+                //   borderRadius: BorderRadius.circular(8),
+                color: Colors.white,
+                //   boxShadow: [
+                //     new BoxShadow(
+                //       color: Colors.grey,
+                //       offset: new Offset(6.0, 6.0),
+                //     ),
+                //   ],
+                // ),
+                child: Column(
+                  // mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // margin:const EdgeInsets.all(30),
+                    SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+
+                    Icon(
+                      Icons.sailing,
+                      size: 40,
+                    ),
+                    SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+                    Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: TextFormField(
+                        autovalidateMode: AutovalidateMode.always,
+                        autocorrect: true,
+                        decoration: InputDecoration(
+                          labelText: 'Gmail',
+                          hintText: 'satya@gmail.com',
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(12.0)),
+                            borderSide:
+                                BorderSide(color: Colors.amber, width: 2),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide(color: Colors.black),
+                          ),
+                        ),
+                        maxLines: 1,
+                        keyboardType: TextInputType.multiline,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: TextFormField(
+                        autovalidateMode: AutovalidateMode.always,
+                        autocorrect: true,
+                        decoration: InputDecoration(
+                          labelText: 'Password',
+                          hintText: '........',
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(12.0)),
+                            borderSide:
+                                BorderSide(color: Colors.amber, width: 2),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide(color: Colors.black),
+                          ),
+                        ),
+                        maxLines: 1,
+                        keyboardType: TextInputType.multiline,
+                      ),
+                    ),
+                    // ignore: deprecated_member_use
+                    RaisedButton(
+                      onPressed: () {},
+                      padding: const EdgeInsets.all(20),
+                      child: Text(
+                        // padding:const EdgeInsets.all(30),
+
+                        ' Login ',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      color: Colors.black,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text("Don't have an account!"),
+                        TextButton(onPressed: () {}, child: Text('->')),
+                      ],
+                    ),
+                  ],
+                )),
+          ),
+        ],
+      ),
+    );
+  }
+}
