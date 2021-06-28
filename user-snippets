@@ -1,0 +1,310 @@
+// {
+// Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+// same ids are connected.
+// Example:
+// "Print to console": {
+// 	"prefix": "log",
+// 	"body": [
+// 		"console.log('$1');",
+// 		"$2"
+// 	],
+// 	"description": "Log output to console"
+// }
+// }
+{
+	"leo": {
+		"prefix": "leo",
+		"body": [
+			"//https://picsum.photos/200/300",
+			"import 'package:flutter/material.dart';",
+			"void main() {",
+			"runApp(MyApp());",
+			// "  print("after my app");",
+			"}",
+			" ",
+			"class MyApp extends StatelessWidget {",
+			"  const MyApp({Key? key}) : super(key: key);",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return MaterialApp(",
+			"      title: 'this is home page',",
+			"      debugShowCheckedModeBanner: false,",
+			"      home: HomePage(),",
+			"    );",
+			"  }",
+			"}",
+			"",
+			"class HomePage extends StatelessWidget {",
+			"  const HomePage({ Key? key }) : super(key: key);",
+			" ",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold(",
+			"      appBar: AppBar(",
+			"        title:Text('i am app bar')  ,",
+			"        actions: [],",
+			"      ),",
+			" backgroundColor: Colors.black54,",
+			"      body: ",
+			"    );",
+			"  }",
+			"}",
+			"",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"scaffold": {
+		"prefix": "scaffold",
+		"body": [
+			"Scaffold(  ",
+			"appBar: AppBar(   ",
+			"  title: Text('First Flutter Application'),   ",
+			"              ),  ",
+			" body: ",
+			"floatingActionButton: FloatingActionButton(onPressed: (){},),",
+			"  );  ",
+			"//https://picsum.photos/200/300",
+		],
+		"description": "Log output to console"
+	},
+	"actions": {
+		"prefix": "actions",
+		"body": [
+			"actions: [",
+			"  PopupMenuButton(",
+			"  icon: Icon(Icons.more_vert),",
+			"    itemBuilder: (_)=>[",
+			"      PopupMenuItem(child: Text('favourates'),value: 0,),",
+			"      PopupMenuItem(child: Text('show all'),value: 1,),",
+			"    ])",
+			"],",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"container": {
+		"prefix": "container",
+		"body": [
+			"Container(",
+			"height: MediaQuery.of(context).size.height*0.3,",
+			" width: double.infinity,",
+			// "color: Colors.purple,",
+			"alignment: FractionalOffset.center,",
+			"transform: Matrix4.rotationZ(0.1),",
+			"decoration: BoxDecoration(",
+			"  border: Border.all(color: Colors.black, width: 4),",
+			"  borderRadius: BorderRadius.circular(8),",
+			"    color: Color.fromRGBO(222, 1, 1, 0.9),",
+			"  boxShadow: [",
+			"    new BoxShadow(",
+			"      color: Colors.grey,",
+			"      offset: new Offset(6.0, 6.0),",
+			"    ),",
+			"  ],",
+			"),",
+			"child: ",
+			"",
+			" ),",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"padding": {
+		"prefix": "padding",
+		"body": [
+			"padding:const EdgeInsets.all(30),",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"baseline": {
+		"prefix": "baseline",
+		"body": [
+			"Baseline(",
+			"  baseline: 90.0,",
+			"  baselineType: TextBaseline.alphabetic,",
+			"  child: Container(",
+			"    height: 60,",
+			"    width: 50,",
+			"    color: Colors.blue,",
+			"  ),",
+			"),",
+		],
+		"description": "Log output to console"
+	},
+	"aspectratio": {
+		"prefix": "aspectratio",
+		"body": [
+		"AspectRatio(",	
+		"  aspectRatio: 9 / 9,",	
+		"  child:",	
+		"",	
+		"",	
+		"),",	
+			
+		],
+		"description": "Log output to console"
+	},
+	"margin": {
+		"prefix": "margin",
+		"body": [
+			"margin:const EdgeInsets.all(30),",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"image": {
+		"prefix": "image",
+		"body": [
+			"Image.network( 'https://picsum.photos/200',  height: 400,  width: 250  ",
+			"              ),  ",
+			"//https://picsum.photos/200/300",
+			" ",
+		],
+		"description": "Log output to console"
+	},
+	"color": {
+		"prefix": "color",
+		"body": [
+			"color: Colors.red,",
+			// "",
+		],
+		"description": "Log output to console"
+	},
+	"cliprrect": {
+		"prefix": "cliprrect",
+		"body": [
+			"ClipRRect(",
+			"borderRadius: BorderRadius.only(",
+			"topRight: Radius.circular(30),bottomRight: Radius.circular(30),topLeft: Radius.circular(30),bottomLeft: Radius.circular(30)),",
+			"    child: ",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"lilneargradient": {
+		"prefix": "lineargradient",
+		"body": [
+			"LinearGradient(",
+			"  colors: [",
+			"    Color.fromRGBO(215, 117, 225, 1),",
+			"    Color.fromRGBO(255, 188, 117, 1),",
+			"  ],",
+			"  begin: Alignment.topLeft,",
+			"  end: Alignment.bottomRight,",
+			"  stops: [0,1],",
+			"),",
+		],
+		"description": "Log output to console"
+	},
+	"textfield": {
+		"prefix": "textfield",
+		"body": [
+			" ",
+			" ",
+		],
+		"description": "Log output to console"
+	},
+	"textformfield": {
+		"prefix": "textformfield",
+		"body": [
+			" TextFormField(",
+			"autovalidateMode: AutovalidateMode.always, autocorrect: true,",
+			"  decoration: InputDecoration(labelText: 'enter'), ",
+			"icon: Icon(Icons.message_outlined),",
+			"labelText: 'Gmail',hintText: 'satya@gmail.com',",
+			"enabledBorder: OutlineInputBorder(borderRadius:BorderRadius.all(Radius.circular(12.0)),",
+			"borderSide:BorderSide(color: Colors.amber, width: 2),),",
+			"focusedBorder: OutlineInputBorder(borderRadius:BorderRadius.all(Radius.circular(10.0)),",
+			" borderSide: BorderSide(color: Colors.black),",
+			"",
+			"",
+			"),),",
+			
+			"  maxLines: 2, ",
+			"  keyboardType: TextInputType.multiline, ",
+			" ),",
+			" ",
+		],
+		"description": "Log output to console"
+	},
+	"text": {
+		"prefix": "text",
+		"body": [
+			"Text('Hello! i am inside a container!',",
+			"      style: TextStyle(fontSize: 20)),",
+		],
+		"description": "Log output to console"
+	},
+	"navigatorpush": {
+		"prefix": "navigatorpush",
+		"body": [
+			"Navigator.of(context).push( ",
+			"  MaterialPageRoute( ",
+			"    builder: (ctx) => Product_scree('title'),",
+			"  ),",
+			");",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"listile": {
+		"prefix": "listile",
+		"body": [
+			"ListTile(",
+			"          leading: Icon(Icons.add),",
+			"          title: Text('listile',textScaleFactor: 1.5,),",
+			"          trailing: Icon(Icons.done),",
+			"          subtitle: Text('This is subtitle'),",
+			"          selected: true,",
+			"        ),",
+			"",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"gridview": {
+		"prefix": "gridview",
+		"body": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"materi": {
+		"prefix": "materi",
+		"body": [
+			"",
+		],
+		"description": "Log output to console"
+	},
+	"gridtile": {
+		"prefix": "gridtile",
+		"body": [
+			"GridTile(",
+			"child: Image.network('https://picsum.photos/200',",
+			"    fit: BoxFit.cover, height: 400, width: 250),",
+			"footer: GridTileBar(",
+			"  backgroundColor: Colors.black54,",
+			"  leading: IconButton(",
+			"    icon: Icon(Icons.ac_unit_outlined),onPressed: () {},),",
+			"  title: Text('title',textAlign: TextAlign.center,),",
+			"    trailing: IconButton(icon: Icon(Icons.ac_unit_outlined),onPressed: () {},),",
+			"  ),",
+			"),",
+			"",
+			"",
+			"",
+		],
+		"description": "Log output to console"
+	},
+}
